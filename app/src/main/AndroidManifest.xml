@@ -15,13 +15,13 @@
         android:supportsRtl="true"
 
         android:theme="@style/AppTheme">
-        <activity android:name=".Admin.AdminNotification.AdminNotification"></activity>
+        <activity android:name=".Admin.AdminNotification.AdminNotification" android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"></activity>
         <activity
             android:name=".Admin.AdminHomeActivity.AdminHomeActivity"
-            android:screenOrientation="portrait" />
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
         <activity
             android:name=".SplashActivity"
-            >
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -29,6 +29,7 @@
         </activity>
         <activity
             android:name=".Survey.SurveyActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
              />
 
         <activity
@@ -36,7 +37,8 @@
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:stateNotNeeded="true" >
+            android:stateNotNeeded="true"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,10 +50,12 @@
 
 
         <activity
-            android:name=".UserProfile.UserProfileActivity" />
+            android:name=".UserProfile.UserProfileActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
         <activity
-            android:name=".UserProfile.ThankyouActivity" />
-        <activity android:name=".Login.LoginActivity" />
+            android:name=".UserProfile.ThankyouActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+        <activity android:name=".Login.LoginActivity"  android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
 
         <service android:name=".BatteryService" />
 
